@@ -18,6 +18,8 @@ const VideoBackground = ({ overlayOpacity = 0.55 }) => {
       height: '100%',
       zIndex: 0,
       overflow: 'hidden',
+      transform: 'translateZ(0)',
+      WebkitTransform: 'translateZ(0)',
     }}>
       <video
         ref={videoRef}
@@ -37,6 +39,7 @@ const VideoBackground = ({ overlayOpacity = 0.55 }) => {
           width: 'auto',
           height: 'auto',
           objectFit: 'cover',
+          willChange: 'transform',
         }}
       />
       <div style={{

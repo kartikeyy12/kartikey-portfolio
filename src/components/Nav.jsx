@@ -12,31 +12,59 @@ const Nav = () => {
 
   return (
     <motion.nav
-  initial={{ opacity: 0, y: -20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6, ease: 'easeOut' }}
-  style={{ zIndex: 10 }}
-  className="fixed top-0 left-0 right-0 flex items-center justify-between px-8 py-6"
->
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 10,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        padding: '20px 24px',
+      }}
+    >
       {/* Left initial */}
       <Link
         to="/"
-        className="text-white text-sm font-medium tracking-widest hover:opacity-60 transition-opacity duration-300"
+        style={{
+          color: 'white',
+          fontSize: '0.75rem',
+          fontFamily: 'Space Grotesk, sans-serif',
+          fontWeight: 500,
+          letterSpacing: '0.2em',
+          textDecoration: 'none',
+          opacity: 0.8,
+          transition: 'opacity 0.3s',
+          flexShrink: 0,
+        }}
       >
         K
       </Link>
 
       {/* Center links */}
-      <div className="flex items-center gap-10">
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: 'clamp(16px, 4vw, 40px)',
+      }}>
         {navLinks.map(({ label, path }) => (
           <Link
             key={label}
             to={path}
-            className={`text-xs font-medium tracking-widest transition-opacity duration-300
-              ${location.pathname.startsWith(path)
-                ? 'opacity-100'
-                : 'opacity-50 hover:opacity-100'
-              }`}
+            style={{
+              color: 'white',
+              fontSize: 'clamp(0.55rem, 1.5vw, 0.7rem)',
+              fontFamily: 'Space Grotesk, sans-serif',
+              fontWeight: 400,
+              letterSpacing: '0.2em',
+              textDecoration: 'none',
+              opacity: location.pathname.startsWith(path) ? 1 : 0.45,
+              transition: 'opacity 0.3s',
+            }}
           >
             {label}
           </Link>
@@ -46,7 +74,17 @@ const Nav = () => {
       {/* Right initial */}
       <Link
         to="/"
-        className="text-white text-sm font-medium tracking-widest hover:opacity-60 transition-opacity duration-300"
+        style={{
+          color: 'white',
+          fontSize: '0.75rem',
+          fontFamily: 'Space Grotesk, sans-serif',
+          fontWeight: 500,
+          letterSpacing: '0.2em',
+          textDecoration: 'none',
+          opacity: 0.8,
+          transition: 'opacity 0.3s',
+          flexShrink: 0,
+        }}
       >
         T
       </Link>

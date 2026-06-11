@@ -12,13 +12,16 @@ const Home = () => {
     <div style={{
       position: 'relative',
       zIndex: 1,
-      height: '100vh',
+      height: '100svh',
+      minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
+      padding: '0 24px',
       marginTop: '-60px',
-      gap: '24px',
+      boxSizing: 'border-box',
+      overflow: 'hidden',
     }}>
 
       {/* Name */}
@@ -28,10 +31,14 @@ const Home = () => {
         transition={{ duration: 0.9, ease: 'easeOut' }}
         style={{
           fontFamily: 'Space Grotesk, sans-serif',
-          fontSize: 'clamp(2.5rem, 6vw, 5.5rem)',
+          fontSize: 'clamp(1.8rem, 7vw, 5.5rem)',
           fontWeight: 300,
           letterSpacing: '0.001em',
           color: '#ffffff',
+          textAlign: 'center',
+          whiteSpace: 'nowrap',
+          marginBottom: '24px',
+          lineHeight: 1.1,
         }}
       >
         KartikeyTiwari
@@ -47,22 +54,23 @@ const Home = () => {
           flexWrap: 'wrap',
           justifyContent: 'center',
           alignItems: 'center',
-          gap: '8px 0',
-          maxWidth: '700px',
+          gap: '4px 0',
+          maxWidth: '600px',
           textAlign: 'center',
+          padding: '0 16px',
         }}
       >
         {tags.map((tag, i) => (
           <span key={tag} style={{
             fontFamily: 'Space Grotesk, sans-serif',
-            fontSize: '0.7rem',
+            fontSize: 'clamp(0.5rem, 1.5vw, 0.7rem)',
             fontWeight: 400,
-            letterSpacing: '0.2em',
+            letterSpacing: '0.18em',
             color: 'rgba(255,255,255,0.5)',
             textTransform: 'uppercase',
           }}>
             {tag}{i < tags.length - 1 && (
-              <span style={{ margin: '0 12px', opacity: 0.3 }}>·</span>
+              <span style={{ margin: '0 8px', opacity: 0.3 }}>·</span>
             )}
           </span>
         ))}
