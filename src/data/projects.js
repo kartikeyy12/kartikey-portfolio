@@ -386,4 +386,4 @@ export const getCategoryBySlug = (slug) =>
 export const getProjectBySlug = (categorySlug, projectSlug) => {
   const category = getCategoryBySlug(categorySlug)
   return category?.projects.find((p) => p.id === projectSlug)
-}
+} 
