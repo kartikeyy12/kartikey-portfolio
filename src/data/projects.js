@@ -14,7 +14,7 @@ export const categories = [
         sections: [
           {
             title: 'The Motivation',
-            content: 'Traditional campus logistics at NIT Goa — the transit of administrative documents or lab materials between departments — rely entirely on manual human effort. The goal was to build a contactless, on-demand robotic platform capable of last-mile delivery to eliminate these inefficiencies. The system needed to navigate complex campus geometries independently and operate entirely offline, as relying on continuous internet connectivity across all zones of the campus was not a viable option.',
+            content: 'Traditional campus logistics at NIT Goa — the transit of administrative documents or lab materials between departments — rely entirely on manual human effort. The goal was to build a contactless, on-demand robotic platform capable of last-minute delivery to eliminate these inefficiencies. The system needed to navigate complex campus geometries independently and operate entirely offline, as relying on continuous internet connectivity across all zones of the campus was not a viable option.',
           },
           {
             title: 'Engineering Architecture & Execution',
@@ -122,7 +122,7 @@ export const categories = [
           },
           {
             title: 'Final Impact & Results',
-            content: 'The finalized prototype successfully facilitated real-time acoustic reconstruction between two nodes. By transmitting discrete digital payloads rather than open analog broadcasts, the system achieves pristine audio clarity with high noise immunity. Built for under ₹1,000 per node, the architecture proves the viability of low-cost, highly secure localized communication networks.',
+            content: 'The finalized prototype successfully facilitated real-time acoustic reconstruction between two nodes. By transmitting discrete digital payloads rather than open analog broadcasts, the system achieves pristine audio clarity with high noise immunity. Built for under ₹1,000 per node, the architecture proves the viability of a low-cost, highly secure localized communication networks.',
           },
         ],
         artifacts: [
@@ -282,7 +282,7 @@ export const categories = [
         sections: [
           {
             title: '',
-            content: 'For me, photography is the ultimate intersection of technical precision and raw storytelling. It\'s about freezing transient moments that would otherwise be forgotten. As Director of Photography at Exposure Explorers, I covered 10+ college events, managing and editing a 50+ GB visual portfolio.\n\nCovering fast-paced campus events taught me how to anticipate the action rather than just react to it — finding the perfect angle in a crowded auditorium, adapting to unpredictable stage lighting, and capturing the candid energy of college life as it unfolds in real-time.\n\nWhen I step outside the campus gates, the camera becomes a tool for pure exploration. Whether navigating steep, winding trails or chasing the shifting mist across a mountain ridge, outdoor photography shifts my pace entirely. It\'s no longer about managing a crowd, but about responding to the environment, reading the natural light, framing the massive scale of the landscapes, and slowing down to capture the quiet, untouched geometry of the world around me.',
+            content: 'Photography, for me, is about noticing things before they disappear. When I\'m out with the club, I\'m less focused on the shot and more on getting people to slow down long enough to see what they were about to walk past. Some of these are shot on a camera, the rest on my iPhone 13.',
           },
         ],
         artifacts: [],

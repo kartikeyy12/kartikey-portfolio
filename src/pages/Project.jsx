@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { getProjectBySlug, getCategoryBySlug } from '../data/projects'
+import PhotographyCollage from '../components/PhotographyCollage'
 
 const Project = () => {
   const { categorySlug, projectSlug } = useParams()
@@ -22,7 +23,10 @@ const Project = () => {
       display: 'flex',
       justifyContent: 'center',
     }}>
-      <div style={{ width: '100%', maxWidth: '720px' }}>
+      <div style={{
+        width: '100%',
+        maxWidth: project.isPhotography ? '1100px' : '720px',
+      }}>
 
         {/* Breadcrumb */}
         <motion.div
@@ -131,14 +135,17 @@ const Project = () => {
         {/* Divider */}
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', marginBottom: '60px' }} />
 
-        {/* Sections */}
+        {/* Description — constrained width even on photography page */}
         {project.sections?.map((section, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 + i * 0.1 }}
-            style={{ marginBottom: '48px' }}
+            style={{
+              marginBottom: '48px',
+              maxWidth: project.isPhotography ? '640px' : '100%',
+            }}
           >
             {section.title !== '' && (
               <p style={{
@@ -168,8 +175,19 @@ const Project = () => {
           </motion.div>
         ))}
 
-        {/* Artifacts / Links */}
-        {project.artifacts?.filter(a => a.href !== '#').length > 0 && (
+        {/* Photography collage — only for isPhotography projects */}
+        {project.isPhotography && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <PhotographyCollage />
+          </motion.div>
+        )}
+
+        {/* Artifacts / Links — not shown for photography */}
+        {!project.isPhotography && project.artifacts?.filter(a => a.href !== '#').length > 0 && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
