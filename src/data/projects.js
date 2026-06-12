@@ -275,7 +275,7 @@ export const categories = [
         id: 'exposure-explorers',
         title: 'Exposure Explorers',
         subtitle: 'Director of Photography — Visual Storytelling Through Light and Geometry',
-        year: '2023–Present',
+        year: '2026–Present',
         tags: ['Photography', 'Event Coverage', 'Landscape', 'Visual Direction'],
         status: 'Ongoing',
         isPhotography: true,
