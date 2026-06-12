@@ -4,8 +4,23 @@ const VideoBackground = ({ overlayOpacity = 0.55 }) => {
   const videoRef = useRef(null)
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {})
+    const video = videoRef.current
+    if (!video) return
+
+    const tryPlay = () => {
+      video.play().catch(() => {})
+    }
+
+    // Try immediately
+    tryPlay()
+
+    // iOS Safari sometimes needs a user gesture — fire on first touch too
+    document.addEventListener('touchstart', tryPlay, { once: true })
+    document.addEventListener('click', tryPlay, { once: true })
+
+    return () => {
+      document.removeEventListener('touchstart', tryPlay)
+      document.removeEventListener('click', tryPlay)
     }
   }, [])
 
@@ -40,8 +55,10 @@ const VideoBackground = ({ overlayOpacity = 0.55 }) => {
           height: 'auto',
           objectFit: 'cover',
           willChange: 'transform',
+          pointerEvents: 'none',
         }}
       />
+      {/* Overlay — also blocks native video controls from being tappable */}
       <div style={{
         position: 'absolute',
         top: 0,
@@ -49,6 +66,7 @@ const VideoBackground = ({ overlayOpacity = 0.55 }) => {
         width: '100%',
         height: '100%',
         backgroundColor: `rgba(0,0,0,${overlayOpacity})`,
+        zIndex: 1,
       }} />
     </div>
   )
