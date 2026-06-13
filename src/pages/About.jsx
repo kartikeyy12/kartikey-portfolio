@@ -45,7 +45,7 @@ const About = () => {
             letterSpacing: '0.01em',
             marginBottom: '28px',
           }}>
-            I am an Electronics and Communication Engineering student with a deep passion for building systems that bridge the gap between low-level hardware and intelligent software.
+            I am an Electronics and Communication Engineering student driven by the simple thrill of creating things from scratch. For me, being an engineer means having the ultimate toolkit. I love the realization that with enough knowledge, time, and the right components, I can build practically anything I imagine. It is not just about studying theories or looking at diagrams; it is about the absolute freedom to bring my ideas to life and build systems that actually work.
           </p>
           <p style={{
             fontFamily: 'Space Grotesk, sans-serif',
@@ -56,7 +56,7 @@ const About = () => {
             letterSpacing: '0.01em',
             marginBottom: '20px',
           }}>
-            Whether I am architecting autonomous rovers, optimizing sub-millisecond sensor fusion pipelines, or leading grassroots STEM outreach, I approach every challenge with an engineering mindset and a drive for practical innovation.
+            When I step away from the workbench, I channel my energy into a mix of creative and physical pursuits. I have always had a strong visual side, which I express through photography, digital design, and editing. Whether I am shooting photos at a fast-paced campus event or working on editorial layouts, I really enjoy the process of visual storytelling. I also make it a point to stay active and unplugged. You will often find me working out, picking up a guitar, or heading out to explore the trails and mountains.
           </p>
           <p style={{
             fontFamily: 'Space Grotesk, sans-serif',
@@ -66,7 +66,7 @@ const About = () => {
             lineHeight: '1.9',
             letterSpacing: '0.01em',
           }}>
-            Beyond the circuits and code, I am an avid photographer and nature enthusiast — often found trekking through the mountains or capturing the raw, fast-paced energy of live events through my lens. I believe in living a highly engaged life, balancing the rigorous, analytical discipline of deep-tech development with the creative storytelling of literature and visual arts.
+            At my core, I am a highly social person who genuinely enjoys talking to people and hearing new perspectives. I have always been drawn to the idea of becoming a polymath, someone who refuses to be boxed into just one field and wants to master a wide range of knowledge. To put it in simpler terms, the main goal of my life is to become a "Jacked Nerd," and I keep getting closer to it every day. By balancing the gym, my studies, and my creative projects, I am building a well-rounded life where I can lift heavy, think deeply, and connect with people who are just as engaged with the world as I am.
           </p>
         </motion.div>
 
@@ -118,7 +118,7 @@ const About = () => {
                 color: 'rgba(255,255,255,0.25)',
                 letterSpacing: '0.12em',
               }}>
-                2022 — 2026
+                2024 — 2028
               </p>
               <p style={{
                 fontFamily: 'Space Grotesk, sans-serif',

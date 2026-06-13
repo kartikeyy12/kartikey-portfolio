@@ -275,7 +275,7 @@ export const categories = [
         id: 'exposure-explorers',
         title: 'Exposure Explorers',
         subtitle: 'Director of Photography — Visual Storytelling Through Light and Geometry',
-        year: '2026–Present',
+        year: 'March 2026–Present',
         tags: ['Photography', 'Event Coverage', 'Landscape', 'Visual Direction'],
         status: 'Ongoing',
         isPhotography: true,
@@ -298,7 +298,7 @@ export const categories = [
         id: 'convocation-magazine',
         title: 'Convocation Magazine',
         subtitle: 'Editorial & Creative Direction — 11th Convocation of NIT Goa',
-        year: '2024',
+        year: 'Jan 2026',
         tags: ['Editorial Design', 'Typography', 'Layout', 'Project Management'],
         status: 'Completed',
         sections: [
@@ -313,7 +313,7 @@ export const categories = [
         id: 'solace-writer',
         title: 'Split Verdict — Solace',
         subtitle: 'Featured Writer & Column Creator, NIT Goa Literature Club',
-        year: '2023–Present',
+        year: 'Aug 2025 –Present',
         tags: ['Writing', 'Column', 'Editorial', 'Literature Club'],
         status: 'Ongoing',
         sections: [
@@ -333,9 +333,9 @@ export const categories = [
     projects: [
       {
         id: 'spie',
-        title: 'SPIE Student Chapter',
+        title: 'SPIE Student Chapter NIT Goa',
         subtitle: 'Member & Program Coordinator — Building Technical Community',
-        year: '2023–Present',
+        year: 'Feb 2026 – Present',
         tags: ['SPIE', 'Optics & Photonics', 'Outreach', 'Event Management', 'STEM Education'],
         status: 'Ongoing',
         sections: [
@@ -350,7 +350,7 @@ export const categories = [
         id: 'ebsb',
         title: 'Ek Bharat Shreshtha Bharat',
         subtitle: 'Program Coordinator — Celebrating Culture and Heritage at NIT Goa',
-        year: '2023–Present',
+        year: 'June 2025 - April 2026',
         tags: ['Cultural Exchange', 'National Program', 'Event Management', 'Leadership'],
         status: 'Ongoing',
         sections: [
@@ -365,7 +365,7 @@ export const categories = [
         id: 'solace-treasurer',
         title: 'Treasurer, Solace',
         subtitle: 'Financial Operations & Club Management',
-        year: '2023–Present',
+        year: 'Aug 2026–Present',
         tags: ['Financial Management', 'Literature Club', 'Organizational Leadership'],
         status: 'Ongoing',
         sections: [
