@@ -200,7 +200,7 @@ const About = () => {
               letterSpacing: '0.12em',
               whiteSpace: 'nowrap',
             }}>
-              May 2025 — Present
+              May 2026 — Present
             </p>
           </div>
         </motion.div>
