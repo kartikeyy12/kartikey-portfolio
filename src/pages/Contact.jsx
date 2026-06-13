@@ -124,7 +124,7 @@ const Contact = () => {
             maxWidth: '480px',
           }}
         >
-          Open to collaborations, internships, research opportunities, and good conversations about embedded systems, RF, or astrophotography.
+          Open to collaborations, internships, research opportunities, and good conversations about any of yours or my interests.
         </motion.p>
 
         <div style={{ display: 'flex', flexDirection: 'column' }}>
